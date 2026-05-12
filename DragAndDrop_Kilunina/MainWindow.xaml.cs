@@ -20,5 +20,13 @@ namespace DragAndDrop_Kilunina
         {
             InitializeComponent();
         }
+        private void ImageUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+        private void ImageDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

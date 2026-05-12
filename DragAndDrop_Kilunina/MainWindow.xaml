@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DragAndDrop_Kilunina"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800">
-    <Grid>
-        <Image x:Name="image" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Source="/Images/Пуговица.png"/>
+        Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800" MouseUp="ImageUp">
+    <Grid MouseUp="ImageUp">
+        <Image MouseUp="ImageUp" MouseDown="ImageDown" x:Name="image" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Source="/Images/Пуговица.png"/>
     </Grid>
 </Window>
