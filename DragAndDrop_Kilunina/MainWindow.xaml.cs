@@ -23,11 +23,11 @@ namespace DragAndDrop_Kilunina
         }
         private void ImageUp(object sender, MouseButtonEventArgs e)
         {
-
+            dispatcherTimer.Stop();
         }
         private void ImageDown(object sender, MouseButtonEventArgs e)
         {
-
+            dispatcherTimer.Start();
         }
     }
 }
