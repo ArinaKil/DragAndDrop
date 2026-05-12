@@ -1,13 +1,7 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Windows.Threading;
+using System;
 
 namespace DragAndDrop_Kilunina
 {
@@ -16,9 +10,16 @@ namespace DragAndDrop_Kilunina
     /// </summary>
     public partial class MainWindow : Window
     {
+        private DispatcherTimer dispatcherTimer = new DispatcherTimer();
         public MainWindow()
         {
             InitializeComponent();
+            dispatcherTimer.Tick += DispatcherTimer_Tick;
+            dispatcherTimer.Interval = new System.TimeSpan(0, 0, 0, 0, 1000 / 60);
+        }
+        private void DispatcherTimer_Tick(object sender, System.EventArgs e)
+        {
+
         }
         private void ImageUp(object sender, MouseButtonEventArgs e)
         {
